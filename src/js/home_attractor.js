@@ -10,10 +10,15 @@ let mX = 0;
 let mY = 0;
 let frame = 0;
 
+let min_scale = 6;
+let max_scale = 15;
+
 let transY = 10;
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+  scale = map(windowWidth, 0, screen.width, min_scale, max_scale)
+  console.log(scale)
 }
 
 function setup() {
@@ -47,6 +52,8 @@ function initConditions() {
   // if (windowWidth < 600) {
   //   scale = 3;
   // }
+  scale = map(windowWidth, 0, screen.width, min_scale, max_scale)
+  console.log(scale)
 
 
   points = []

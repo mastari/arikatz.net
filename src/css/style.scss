@@ -47,6 +47,7 @@ html {
 .home_links {
   display: flex;
   margin: 0px;
+  font-family: Arial;
 
   &>a {
     text-decoration: none;
@@ -56,7 +57,7 @@ html {
       padding-left: 20px;
       padding-right: 20px;
       list-style: none;
-      font-size: 25px;
+      font-size: 20px;
       border-right: 1px solid rgb(0, 0, 0);
     }
   }
@@ -71,7 +72,8 @@ html {
 
 .home_title {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
+  font-family: Arial;
 
 }
 
