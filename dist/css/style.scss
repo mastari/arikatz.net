@@ -57,6 +57,13 @@ html {
       padding-right: 20px;
       list-style: none;
       font-size: 25px;
+      border-right: 1px solid rgb(0, 0, 0);
+    }
+  }
+
+  &>a:last-child {
+    &>li {
+      border-right: none;
     }
   }
 
@@ -74,6 +81,7 @@ html {
   width: fit-content;
   height: 100vh;
   display: flex;
+  z-index: -1;
 
 
   // position: absolute;

@@ -68,6 +68,11 @@ html {
   padding-right: 20px;
   list-style: none;
   font-size: 25px;
+  border-right: 1px solid black;
+}
+
+.home_links > a:last-child > li {
+  border-right: none;
 }
 
 .home_title {
@@ -85,6 +90,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  z-index: -1;
   font-weight: normal;
   font-size: 40px;
   line-height: 60px;

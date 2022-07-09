@@ -8,9 +8,13 @@ let y = 2;
 let z = 0;
 let mX = 0;
 let mY = 0;
+let frame = 0;
 
 let transY = 10;
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 
 function setup() {
 
@@ -19,6 +23,7 @@ function setup() {
   // cnv.mousePressed(playOscillator);
 
   colorMode(HSB)
+
 
   initConditions()
 }
@@ -47,7 +52,7 @@ function initConditions() {
   points = []
   time = 0;
 
-  x = 0;
+  x = 5;
   y = 2;
   z = 0;
 
@@ -83,7 +88,7 @@ function display() {
   noFill()
   strokeWeight(1.5)
 
-  rotateY(time / 100 + 20)
+  rotateY(20)
 
   push()
   let hu = 0;
@@ -92,7 +97,7 @@ function display() {
   for (let p = 0; p < points.length; p++) {
     check += 1;
     // stroke(hu, 255, 255)
-    stroke(color(70 * p / points.length + 165, 255, 100, 0.5))
+    stroke(color(70 * p / points.length + 120 + sin(time / 5) * 60, 255, 100, 0.5))
 
     vertex(points[p].x * scale, points[p].y * scale, points[p].z * scale)
     hu += 0.5;
@@ -126,15 +131,16 @@ let b = 28;
 let c = 8 / 3;
 
 function draw() {
+  frame++;
 
-      attract(a, b, c, false)
+  attract(a, b, c, false)
 
-      if(points.length > 500) {
-        points.splice(0, 1)
-      }
+  if (points.length > 500) {
+    points.splice(0, 1)
+  }
 
 
-    display()
+  display()
 
 
   // points = []
