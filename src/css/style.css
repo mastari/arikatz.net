@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Crimson Text', serif;
+}
+
+html {
+  height: 100vh;
+}
+
+.page {
+  width: 100%;
+}
+
+.block_container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  line-height: 2.5em;
+}
+
+@media only screen and (min-width: 0px) {
+  .block_container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .block_container {
+    width: 650px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .block_container {
+    width: 700px;
+  }
+}
+
+.home_nav {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 20px;
+  padding-bottom: 16px;
+}
+
+.home_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+}
+
+.home_links > a {
+  text-decoration: none;
+  color: #171717;
+}
+
+.home_links > a > li {
+  padding-left: 20px;
+  padding-right: 20px;
+  list-style: none;
+  font-size: 25px;
+}
+
+.home_title {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.welcome {
+  position: absolute;
+  top: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.welcome > div {
+  display: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.definition {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 20px;
+  line-height: 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.definition > #first_line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.definition > #first_line > #word {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.definition > #first_line > #type {
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.definition > #pronounce {
+  font-style: italic;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  line-height: 20px;
+}
+
+.definition > #explanation {
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+.background_animation {
+  overflow: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+}
+/*# sourceMappingURL=style.css.map */
