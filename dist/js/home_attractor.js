@@ -16,6 +16,8 @@ let min_scale = 6;
 let max_scale = 15;
 
 let transY = 10;
+let transZ = 10;
+let transX = -20;
 
 let rand_color;
 let satch;
@@ -111,7 +113,7 @@ function attract(a, b, c, catchup) {
   y += dy;
   z += dz;
   time += dt;
-  points.push({ x: x, y: y + transY, z: z })
+  points.push({ x: x + transX, y: y + transY, z: z + transZ })
 
   if (points.length > 1000) {
     // points.shift()
