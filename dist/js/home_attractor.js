@@ -10,10 +10,16 @@ let mX = 0;
 let mY = 0;
 let frame = 0;
 
+let rand_seed = Math.random()
+
 let min_scale = 6;
 let max_scale = 15;
 
 let transY = 10;
+
+let rand_color;
+let satch;
+
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
@@ -31,6 +37,22 @@ function setup() {
 
 
   initConditions()
+
+  switch(Math.trunc(rand_seed*10/3)) {
+    case 0:
+      rand_color = 100;
+      satch = 100;
+      break;
+    case 1:
+      rand_color = 200;
+      break;
+    case 2:
+      rand_color = 250;
+      break;
+    default:
+      rand_color = 0;
+      break;
+  }
 }
 // function mouseReleased() {
 //   // ramp amplitude to 0 over 0.5 seconds
@@ -60,11 +82,19 @@ function initConditions() {
   time = 0;
 
   x = 5;
-  y = 2;
+  y = Math.random()*10 + 1;
   z = 0;
 
   mX = mouseX;
   mY = mouseY;
+
+  for(let i = 0; i< 500; i++) {
+    attract(a, b, c, false)
+    points.splice(0, 1)
+  }
+    for(let i = 0; i< 205; i++) {
+    attract(a, b, c, false)
+    }
 }
 
 
@@ -104,7 +134,8 @@ function display() {
   for (let p = 0; p < points.length; p++) {
     check += 1;
     // stroke(hu, 255, 255)
-    stroke(color(70 * p / points.length + 120 + sin(time / 5) * 60, 255, 100, 0.5))
+    console.log(rand_color)
+    stroke(color(30 * p / points.length + rand_color, 255 || satch, 100, 0.5))
 
     vertex(points[p].x * scale, points[p].y * scale, points[p].z * scale)
     hu += 0.5;

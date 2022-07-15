@@ -1,4 +1,24 @@
 {% extends "layouts/base.html" %}
 {% block content %}
-{{ content | safe }}
+
+
+<div class="page">
+  <div class="block_container">
+    <div class="home_nav">
+      <div class="home_title"><a href="/">Ari Katz</a></div>
+      <ul class="home_links">
+        <a href="#pro">
+          <li>Projects</li>
+        </a>
+        <a href="/resume">
+          <li>Resume</li>
+        </a>
+        <a href="/about">
+          <li>About Me</li>
+        </a>
+      </ul>
+    </div>
+    {{ content | safe }}
+  </div>
+</div>
 {% endblock %}

@@ -47,7 +47,7 @@ html {
 .home_links {
   display: flex;
   margin: 0px;
-  font-family: Arial;
+  font-family: 'Crimson Text', serif;
 
   &>a {
     text-decoration: none;
@@ -71,10 +71,14 @@ html {
 }
 
 .home_title {
-  font-weight: bold;
-  font-size: 25px;
-  font-family: Arial;
+  // font-weight: bold;
+  font-size: 26px;
+  font-family: 'Crimson Text', serif;
 
+  &>a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .welcome {
@@ -93,7 +97,7 @@ html {
   // margin: auto;
 
   font-weight: normal;
-  font-size: 40px;
+  font-size: 60px;
   line-height: 60px;
 
   &>div {
@@ -157,4 +161,74 @@ html {
   bottom: 0;
   z-index: -2;
 
+}
+
+.about_me {
+  font-size: 22px;
+}
+
+//! RESUME stuff:
+
+.resume_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume_header_left {
+  line-height: 35px;
+
+  &>#name {
+    font-size: 40px;
+  }
+}
+
+.resume_header_right {
+  line-height: 23px;
+}
+
+.back_to_site {
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(53, 183, 226);
+  margin: 20px;
+}
+
+.experience,
+.technologies {
+  &>h3 {
+    margin-bottom: 0px;
+  }
+}
+
+.job {
+  width: 100%;
+  border-bottom: 1px solid rgb(196, 196,
+      196);
+  padding: 10px;
+
+  &>#details {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.summary {
+  line-height: 24px;
+  display: flex;
+  margin-top: 30px;
+
+  &>.sum {
+    margin-right: 70px;
+    ;
+  }
+
+  &>.technologies {
+    width: 400px;
+
+
+    &>ul {
+      list-style: none;
+      padding: 0px;
+    }
+  }
 }

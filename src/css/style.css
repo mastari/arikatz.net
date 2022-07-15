@@ -56,7 +56,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   margin: 0px;
-  font-family: Arial;
+  font-family: 'Crimson Text', serif;
 }
 
 .home_links > a {
@@ -77,9 +77,13 @@ html {
 }
 
 .home_title {
-  font-weight: bold;
-  font-size: 25px;
-  font-family: Arial;
+  font-size: 26px;
+  font-family: 'Crimson Text', serif;
+}
+
+.home_title > a {
+  text-decoration: none;
+  color: black;
 }
 
 .welcome {
@@ -94,7 +98,7 @@ html {
   display: flex;
   z-index: -1;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 60px;
   line-height: 60px;
 }
 
@@ -161,5 +165,78 @@ html {
   right: 0;
   bottom: 0;
   z-index: -2;
+}
+
+.about_me {
+  font-size: 22px;
+}
+
+.resume_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.resume_header_left {
+  line-height: 35px;
+}
+
+.resume_header_left > #name {
+  font-size: 40px;
+}
+
+.resume_header_right {
+  line-height: 23px;
+}
+
+.back_to_site {
+  text-align: center;
+  text-decoration: underline;
+  color: #35b7e2;
+  margin: 20px;
+}
+
+.experience > h3,
+.technologies > h3 {
+  margin-bottom: 0px;
+}
+
+.job {
+  width: 100%;
+  border-bottom: 1px solid #c4c4c4;
+  padding: 10px;
+}
+
+.job > #details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.summary {
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.summary > .sum {
+  margin-right: 70px;
+}
+
+.summary > .technologies {
+  width: 400px;
+}
+
+.summary > .technologies > ul {
+  list-style: none;
+  padding: 0px;
 }
 /*# sourceMappingURL=style.css.map */
