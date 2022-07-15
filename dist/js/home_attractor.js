@@ -16,8 +16,8 @@ let min_scale = 6;
 let max_scale = 15;
 
 let transY = 10;
-let transZ = 10;
-let transX = -20;
+let transZ = 0;
+let transX = 0;
 
 let rand_color;
 let satch;
