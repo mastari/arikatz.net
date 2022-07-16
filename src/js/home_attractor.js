@@ -40,19 +40,19 @@ function setup() {
 
   initConditions()
 
-  switch(Math.trunc(rand_seed*10/3)) {
-    case 0:
-      rand_color = 100;
-      satch = 100;
-      break;
-    case 1:
-      rand_color = 200;
-      break;
-    case 2:
-      rand_color = 250;
-      break;
+  switch (Math.trunc(rand_seed * 10 / 3)) {
+    // case 0:
+    //   rand_color = 100;
+    //   satch = 100;
+    //   break;
+    // case 1:
+    //   rand_color = 200;
+    //   break;
+    // case 2:
+    //   rand_color = 250;
+    //   break;
     default:
-      rand_color = 0;
+      rand_color = 250;
       break;
   }
 }
@@ -84,19 +84,19 @@ function initConditions() {
   time = 0;
 
   x = 5;
-  y = Math.random()*10 + 1;
+  y = Math.random() * 10 + 1;
   z = 0;
 
   mX = mouseX;
   mY = mouseY;
 
-  for(let i = 0; i< 500; i++) {
+  for (let i = 0; i < 500; i++) {
     attract(a, b, c, false)
     points.splice(0, 1)
   }
-    for(let i = 0; i< 205; i++) {
+  for (let i = 0; i < 205; i++) {
     attract(a, b, c, false)
-    }
+  }
 }
 
 
