@@ -161,14 +161,13 @@ html {
 .background_animation {
   overflow: none;
   position: absolute;
-  left: 0;
+  top: 0;
   right: 0;
-  bottom: 0;
   z-index: -2;
 }
 
 .about_me {
-  font-size: 22px;
+  font-size: 19px;
 }
 
 .resume_container {
@@ -238,5 +237,18 @@ html {
 .summary > .technologies > ul {
   list-style: none;
   padding: 0px;
+}
+
+.project_link {
+  text-decoration: none;
+  color: #35b7e2;
+}
+
+.project_disp_title {
+  font-size: 22px;
+}
+
+.project_text {
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */

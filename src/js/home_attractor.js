@@ -94,7 +94,7 @@ function initConditions() {
     attract(a, b, c, false)
     points.splice(0, 1)
   }
-  for (let i = 0; i < 205; i++) {
+  for (let i = 0; i < 500; i++) {
     attract(a, b, c, false)
   }
 }

@@ -1,0 +1,15 @@
+---
+layout: "layouts/home.html"
+title: Projects
+---
+
+<div class="projects_container">
+  {%- for post in collections.project -%}
+
+  <a href={{post.url}} class="project_link">
+    <div class="project_content">
+      <div class="project_disp_title">{{post.data.title}}</div>
+    </div>
+  </a>
+  {%- endfor -%}
+</div>

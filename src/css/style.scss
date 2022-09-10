@@ -155,15 +155,15 @@ html {
 
 .background_animation {
   overflow: none;
-  position:absolute;
-  top:0;
-  right:0;
+  position: absolute;
+  top: 0;
+  right: 0;
   z-index: -2;
 
 }
 
 .about_me {
-  font-size: 22px;
+  font-size: 19px;
 }
 
 //! RESUME stuff:
@@ -230,4 +230,17 @@ html {
       padding: 0px;
     }
   }
+}
+
+.project_link {
+  text-decoration: none;
+  color: rgb(53, 183, 226);
+}
+
+.project_disp_title {
+  font-size: 22px;
+}
+
+.project_text {
+  font-size: 20px;
 }
