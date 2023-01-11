@@ -27,4 +27,4 @@ Topological:
 
 In each case, we use a unique coordinate functions to represent the same manifold. It's akin to using a flat map to find your way around the spherical Earth. Or if you are a weirdo, using a globe to navigate a flat Earth... The theme I am eluding to is called a "bijection," a function that has an inverse.
 
-<br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
