@@ -3,6 +3,17 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addWatchTarget("src/css/");
   eleventyConfig.addPassthroughCopy('src/js')
   eleventyConfig.addWatchTarget("src/js/");
+
+  eleventyConfig.addFilter("excerpt", (post) => {
+    const content = post.replace(/(<([^>]+)>)/gi, "");
+    return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
+  });
+
+  eleventyConfig.addFilter("simpleDate", (dateString) => {
+    day = new Date(dateString).toISOString().split('T')[0]
+    return day;
+  });
+
   return {
     markdownTemplateEngine: 'njk',
     dataTemplateEngine: 'njk',

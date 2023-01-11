@@ -234,13 +234,25 @@ html {
 
 .project_link {
   text-decoration: none;
-  color: rgb(53, 183, 226);
+
+  &:hover {
+    .project_disp_title {
+      color: rgb(210, 120, 255);
+    }
+  }
 }
 
 .project_disp_title {
   font-size: 22px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
 }
 
 .project_text {
   font-size: 20px;
+}
+
+.project_content {
+  color: rgb(86, 86, 86);
 }

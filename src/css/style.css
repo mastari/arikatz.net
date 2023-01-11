@@ -241,14 +241,28 @@ html {
 
 .project_link {
   text-decoration: none;
-  color: #35b7e2;
+}
+
+.project_link:hover .project_disp_title {
+  color: #d278ff;
 }
 
 .project_disp_title {
   font-size: 22px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .project_text {
   font-size: 20px;
+}
+
+.project_content {
+  color: #565656;
 }
 /*# sourceMappingURL=style.css.map */

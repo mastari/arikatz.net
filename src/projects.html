@@ -4,12 +4,20 @@ title: Projects
 ---
 
 <div class="projects_container">
-  {%- for post in collections.project -%}
+  <br />
+  {%- for post in collections.project | reverse -%}
 
   <a href={{post.url}} class="project_link">
     <div class="project_content">
-      <div class="project_disp_title">{{post.data.title}}</div>
+      <div class="project_disp_title">
+        <div>{{post.data.title}}</div>
+        <div style="color:grey; font-size: 17px;">{{ post.date | simpleDate }}</div>
+      </div>
+      <p style="margin-top: 0px;">{{ post.templateContent | excerpt }}</p>
     </div>
   </a>
+  {#
+  <hr style="color:black; border: solid 0.5px rgb(222, 222, 222);"> #}
   {%- endfor -%}
+
 </div>
