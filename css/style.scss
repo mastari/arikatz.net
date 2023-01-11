@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Crimson Text', serif;
+}
+
+html {
+  height: 100vh;
+}
+
+.page {
+  width: 100%;
+  // border: 1px solid red;
+}
+
+.block_container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  line-height: 2.5em;
+
+  @media only screen and (min-width: 0px) {
+    width: 90%;
+  }
+
+  @media only screen and (min-width: 800px) {
+    width: 650px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 700px;
+  }
+}
+
+.home_nav {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  // border-bottom: 1px dashed rgb(174, 174, 174);
+  padding-left: 20px;
+  padding-bottom: 16px;
+}
+
+.home_links {
+  display: flex;
+  margin: 0px;
+  font-family: 'Crimson Text', serif;
+
+  &>a {
+    text-decoration: none;
+    color: rgb(23, 23, 23);
+
+    &>li {
+      padding-left: 20px;
+      padding-right: 20px;
+      list-style: none;
+      font-size: 20px;
+      border-right: 1px solid rgb(0, 0, 0);
+    }
+  }
+
+  &>a:last-child {
+    &>li {
+      border-right: none;
+    }
+  }
+
+}
+
+.home_title {
+  // font-weight: bold;
+  font-size: 26px;
+  font-family: 'Crimson Text', serif;
+
+  &>a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.welcome {
+  position: absolute;
+  top: 0;
+  width: fit-content;
+  height: 100vh;
+  display: flex;
+  z-index: -1;
+
+
+  // position: absolute;
+
+  // left: 0;
+  // right: 0;
+  // margin: auto;
+
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 60px;
+
+  &>div {
+    display: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+.definition {
+  width: fit-content;
+  height: fit-content;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  padding: 20px;
+  line-height: 30px;
+  // border: 1px solid rgb(227, 227, 227);
+  border-radius: 10px;
+  background-color: white;
+
+  &>#first_line {
+    display: flex;
+    justify-content: space-between;
+
+    &>#word {
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    &>#type {
+      padding-left: 20px;
+      font-size: 20px;
+
+    }
+  }
+
+  &>#pronounce {
+    font-style: italic;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    line-height: 20px;
+  }
+
+  &>#explanation {
+    padding-top: 15px;
+    font-size: 20px;
+  }
+}
+
+.background_animation {
+  overflow: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+
+}
+
+.about_me {
+  font-size: 19px;
+}
+
+//! RESUME stuff:
+
+.resume_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume_header_left {
+  line-height: 35px;
+
+  &>#name {
+    font-size: 40px;
+  }
+}
+
+.resume_header_right {
+  line-height: 23px;
+}
+
+.back_to_site {
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(53, 183, 226);
+  margin: 20px;
+}
+
+.experience,
+.technologies {
+  &>h3 {
+    margin-bottom: 0px;
+  }
+}
+
+.job {
+  width: 100%;
+  border-bottom: 1px solid rgb(196, 196,
+      196);
+  padding: 10px;
+
+  &>#details {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.summary {
+  line-height: 24px;
+  display: flex;
+  margin-top: 30px;
+
+  &>.sum {
+    margin-right: 70px;
+    ;
+  }
+
+  &>.technologies {
+    width: 400px;
+
+
+    &>ul {
+      list-style: none;
+      padding: 0px;
+    }
+  }
+}
+
+.project_link {
+  text-decoration: none;
+
+  &:hover {
+    .project_disp_title {
+      color: rgb(210, 120, 255);
+    }
+  }
+}
+
+.project_disp_title {
+  font-size: 22px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project_text {
+  font-size: 20px;
+}
+
+.project_content {
+  color: rgb(86, 86, 86);
+}
