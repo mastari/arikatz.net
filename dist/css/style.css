@@ -226,8 +226,23 @@ html {
   margin-top: 30px;
 }
 
+@media only screen and (max-width: 630px) {
+  .summary {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .summary > .sum {
   margin-right: 70px;
+}
+
+@media only screen and (max-width: 630px) {
+  .summary > .sum {
+    margin-right: 0px;
+  }
 }
 
 .summary > .technologies {
@@ -264,5 +279,17 @@ html {
 
 .project_content {
   color: #565656;
+}
+
+@media only screen and (max-width: 540px) {
+  .pinch {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .pinch2 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

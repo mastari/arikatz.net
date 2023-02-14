@@ -15,7 +15,7 @@ let rand_seed = Math.random()
 let min_scale = 6;
 let max_scale = 15;
 
-let transY = 10;
+let transY = 5;
 let transZ = 0;
 let transX = 0;
 
@@ -65,9 +65,22 @@ function setup() {
 let scale = 10;
 
 function initConditions() {
-  // if (windowWidth < 1500) {
-  //   scale = 6;
-  // }
+
+  if (windowWidth < 1000) {
+    transZ = -5;
+  }
+  if (windowWidth < 900) {
+    transZ = -6;
+  }
+  if (windowWidth < 800) {
+    transZ = -7;
+  }
+  if (windowWidth < 700) {
+    transZ = -8;
+  }
+  if (windowWidth < 570) {
+    transZ = -12;
+  }
 
 
   // if (windowWidth < 1000) {

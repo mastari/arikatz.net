@@ -215,10 +215,16 @@ html {
   line-height: 24px;
   display: flex;
   margin-top: 30px;
+  @media only screen and (max-width: 630px) {
+    flex-direction: column;
+  }
 
   &>.sum {
     margin-right: 70px;
     ;
+    @media only screen and (max-width: 630px) {
+      margin-right: 0px;
+    }
   }
 
   &>.technologies {
@@ -255,4 +261,16 @@ html {
 
 .project_content {
   color: rgb(86, 86, 86);
+}
+
+.pinch {
+  @media only screen and (max-width: 540px) {
+    display: none;
+  }
+}
+
+.pinch2 {
+  @media only screen and (max-width: 550px) {
+    display: none;
+  }
 }
