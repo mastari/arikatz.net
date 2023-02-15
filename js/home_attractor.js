@@ -22,9 +22,27 @@ let transX = 0;
 let rand_color;
 let satch;
 
+function fixWidth() {
+  if (windowWidth < 1000) {
+    transZ = -5;
+  }
+  if (windowWidth < 900) {
+    transZ = -6;
+  }
+  if (windowWidth < 800) {
+    transZ = -7;
+  }
+  if (windowWidth < 700) {
+    transZ = -8;
+  }
+  if (windowWidth < 570) {
+    transZ = -12;
+  }
+}
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+  fixWidth()
   scale = map(windowWidth, 0, screen.width, min_scale, max_scale)
   console.log(scale)
 }
@@ -64,24 +82,11 @@ function setup() {
 
 let scale = 10;
 
+
+
 function initConditions() {
 
-  if (windowWidth < 1000) {
-    transZ = -5;
-  }
-  if (windowWidth < 900) {
-    transZ = -6;
-  }
-  if (windowWidth < 800) {
-    transZ = -7;
-  }
-  if (windowWidth < 700) {
-    transZ = -8;
-  }
-  if (windowWidth < 570) {
-    transZ = -12;
-  }
-
+  fixWidth()
 
   // if (windowWidth < 1000) {
   //   scale = 5;
