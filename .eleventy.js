@@ -1,8 +1,11 @@
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/css')
   eleventyConfig.addWatchTarget("src/css/");
   eleventyConfig.addPassthroughCopy('src/js')
   eleventyConfig.addWatchTarget("src/js/");
+  eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/img");
+
 
   eleventyConfig.addFilter("excerpt", (post) => {
     const content = post.replace(/(<([^>]+)>)/gi, "");

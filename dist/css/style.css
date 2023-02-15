@@ -339,4 +339,28 @@ html {
     width: 100%;
   }
 }
+
+.me_img {
+  border-radius: 100%;
+  float: left;
+  margin-right: 30px;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 680px) {
+  .me_img {
+    float: none;
+    width: 200px;
+  }
+}
+
+.pinch3 {
+  display: none;
+}
+
+@media only screen and (max-width: 680px) {
+  .pinch3 {
+    display: block;
+  }
+}
 /*# sourceMappingURL=style.css.map */
