@@ -303,3 +303,21 @@ html {
     }
   }
 }
+
+.me_img {
+  border-radius: 100%;
+  float: left;
+  margin-right:30px;
+  margin-top: 15px;
+  @media only screen and (max-width: 680px) {
+    float:none;
+    width: 200px;
+  }
+}
+
+.pinch3 {
+  display: none;
+  @media only screen and (max-width: 680px) {
+    display:block;
+  }
+}
