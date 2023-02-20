@@ -18,14 +18,16 @@
 
 <script>
   $(document).ready(() => {
+
     function httpGet(theUrl) {
       var xmlHttp = new XMLHttpRequest();
       xmlHttp.open("GET", theUrl, false); // false for synchronous request
+      xmlHttp.setRequestHeader('X-Requested-With', 'PHYKATZ')
       xmlHttp.send(null);
       return xmlHttp.responseText;
     }
 
-    let site = httpGet("https://caldining.berkeley.edu/menus/")
+    let site = httpGet("https://cors-anywhere.herokuapp.com/https://caldining.berkeley.edu/menus/")
     let hmtl = jQuery.parseHTML(site)
 
     let html = $(hmtl).find(".Crossroads").html()
