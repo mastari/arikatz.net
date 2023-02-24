@@ -1,5 +1,3 @@
-
-
 let time = 0;
 let points = []
 let evo = 0;
