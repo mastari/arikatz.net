@@ -1,7 +1,7 @@
 ---
 layout: "layouts/project.html"
 title: "Polar Coordinates"
-tags: project
+tags: _project
 date: 2023-02-21
 ---
 <script src="/js/p5/p5.js"></script>

@@ -1,7 +1,7 @@
 ---
 layout: "layouts/project.html"
 title: "Rates"
-tags: project
+tags: _project
 date: 2023-02-14
 ---
 

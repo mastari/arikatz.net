@@ -1,7 +1,7 @@
 ---
 layout: "layouts/project.html"
 title: "Mathematical non-Literacy"
-tags: project
+tags: _project
 date: 2023-01-11
 ---
 

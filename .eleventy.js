@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("src/js/");
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/CNAME");
 
   eleventyConfig.addPlugin(mathjaxPlugin);
 
