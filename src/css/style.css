@@ -341,7 +341,7 @@ html {
 }
 
 .me_img {
-  border-radius: 100%;
+  border-radius: 5px;
   float: left;
   margin-right: 30px;
   margin-top: 15px;
@@ -350,7 +350,7 @@ html {
 @media only screen and (max-width: 680px) {
   .me_img {
     float: none;
-    width: 200px;
+    width: 90%;
   }
 }
 
