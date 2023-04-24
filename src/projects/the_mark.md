@@ -10,7 +10,7 @@ Today I missed the mark. Circa yesterday, I’d been geared up for a big ol’ w
 <h3>Out of gear.</h3>
 When you are trying to bike up a mountain at max gear, you are being an idiot. My plan was to exert extreme force every second of the day to climb to the top of my homework. This is unreasonable and not even the hunkiest of muscle maniacs could ride a tricycle up a driveway this way. Making the motions of homework more accommodating to the small reserves of energy available at any given time in the day is of utmost importance. Take baby steps and only increase them to toddler steps if you feel like you are ready to be a big boy.
 
-<h3>Why use the 91 when we have 86 at home?</h3>
+<h3>Why use the 91 when we have 87 at home?</h3>
 Like an antique car, sometimes you have to put in a little more elbow grease to ensure proper maintenance. If you are in university, you have most likely been alive for at least eighteen years. So why are you still eating like a third grader you old geezer you! I don’t care if you have taquitos in the freezer. Go eat something fresh, even bite into a tomato if you need to! Nature is full of inspiration for healthy eating, and you need to recognize that ready-to-eat, trans fat, high sugar, refined carbs are just not what nature intended to seduce you with.
 
 <h3>Closing Thoughts</h3>
