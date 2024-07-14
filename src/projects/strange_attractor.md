@@ -1,7 +1,7 @@
 ---
 layout: "layouts/project.html"
 title: Lorenz Strange Attractor Analysis
-tags: project
+tags: _project
 link: "/pdf/strange_attractor.pdf"
 date: 2023-10-04
 ---
