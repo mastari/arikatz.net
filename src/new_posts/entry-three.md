@@ -6,4 +6,4 @@ layout: "layouts/note.html"
 ---
 # The Robot Brain Problem
 
-Coming January 3, 2026.
+Coming January 3, 2026...
