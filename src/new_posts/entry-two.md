@@ -81,7 +81,7 @@ Picture this, your loved one's heart stops, breathing stops, or bleeds. Run the 
 
 (Note: These scenarios reflect the general medical priority, but the timescales will vary depending on the severity of the exact situation)
 
-Since most ambulances don't magically appear in 1 minute, caring  bystanders can reduce the chance of death significantly, even without surgical intervention. This makes public health knowledge and helping each other as **humanity's greatest defense** against death.
+Since most ambulances don't magically appear in 1 minute, caring  bystanders can reduce the chance of death significantly, even without surgical intervention. This makes public health knowledge and helping each other as **humanity's greatest defense** against preventable deaths.
 
 ### Heart Stop
 
@@ -100,7 +100,7 @@ Regardless, making a tourniquet with anything available is the way to go.
 
 ## A Short, Bizarre, and True History of The EMS System
 
-It's hard to imagine a world without the modern EMS system. We hear ambulances almost everyday. Unfortunately, there used to be a world without a more primitive one, which makes me even more grateful to be alive in 2026.
+It's hard to imagine a world without the modern EMS system. We hear ambulances almost everyday. Unfortunately, there used to be a world with a more primitive one, which makes me even more grateful to be alive in 2026.
 
 ### 1. The "Funeral Home" Era (Pre-1966)
 Before the mid-60s, there was no "EMT" as we know it. In many American towns, the only vehicle capable of carrying a person lying down was a hearse.
@@ -115,12 +115,13 @@ If you're a third generation American, this is likely the ambulance that your mo
 ### 2. The 1966 "White Paper"
 The turning point came from a grim realization during the Vietnam War. A landmark report titled *Accidental Death and Disability: The Neglected Disease of Modern Society* revealed a shocking statistic: **A soldier wounded in a Vietnamese jungle had a higher chance of survival than a civilian injured on a California highway.** Essentially, we were shamed into creating the first national standards for training and ambulances in the U.S.
 
-Soon, it wouldn't be more than a year until Pennsylvania would spearhead the training what would be called a *paramedic*.
+Soon, it wouldn't be more than a year until Pennsylvania would spearhead the training for what would be called a *paramedic*.
 
 ### 3. Freedom House: The First Paramedics (1967)
 In Pittsburgh, the **Freedom House Ambulance Service** became the first in the nation to train "Paramedics." Composed of Black men and women from the Hill District, they were trained by Dr. Peter Safar (the father of CPR). They quite literally wrote the first manuals for how to save a life in the back of a moving vehicle, proving that advanced medical care could happen on the street.
 
 ![Freedom House Ambulance Service](https://www.heinzhistorycenter.org/wp-content/uploads/2022/02/Ch2_Freedom-House_Caliguiri15.jpg "Freedom House Ambulance Service")
+(*Freedom House Ambulance Service*, Source: Heinz History Center)
 
 ### 4. The *Emergency!* Effect (1972)
 Pop-culture is no stranger to changing what we demand out of the real world. Spielberg's *Jaws* made everyone start killing sharks on-site, and then activists had to re-educate the public that shark attacks were uncommon. And more importantly, we were losing a crucial role in maintaining healthy ocean ecosystems with this irrational fear. Movies and songs are powerful. They *market ideas*  into the mainstream, and change lives for better or worse. Just find a girl who's favorite series is *Sex and the City*, then guess where they want to live...
@@ -129,7 +130,7 @@ Originally, ambulance EMS was popularized by the fictional drama, *Emergency!*  
 
 ## AI Isn't Ready To Take The Wheel (Yet), But Employees Are Already Leaving
 
-EMS response is a chain of events that need to take place from the moment someone gets injured to the point at which they are stabilized. Most of which are paid positions. However, these EMS personnel involved in saving a lives are getting exhausted. With burnout rates and turnover rates hitting record highs, paired with low pay, large parts of the EMS response chains in every state are slowing down. This means more emergency cases will slide into the high mortality zones of the golden hour curves. So, what are we doing about it?
+EMS response is a chain of events that need to take place from the moment someone gets injured to the point at which they are stabilized. Most of which are paid positions. However, these EMS personnel involved in saving a lives are getting exhausted. With burnout and turnover rates hitting record highs, paired with low pay, large parts of the EMS response chains in every state are slowing down. This means more emergency cases will slide into the high mortality zones of the golden hour curves. So, what are we doing about it?
 
 This is truly a problem that needs to be solved with policy, and I'm not sure how its going to change. Maybe we need another TV show? Probably not. In the age of AI, we are more keen on getting an AI to do what we want rather than a human being. Automated solutions to take humans out of the loop is inevitable for work that humans say stress them out and want to be paid more to do. And often, the robots are safer and cheaper to operate as time goes on, whereas humans usually get more expensive and tired. Yet, as of January 2026, we don't have the robotics for comprehensive EMS care so we need to solve the problem at hand with better lifestyles for these essential workers.
 
@@ -155,6 +156,11 @@ In this paper, drones are capable of delivering AEDs rapidly, however the curren
 **How can I ensure I can do my part?**
 
 *[Click for some good answers...](https://gemini.google.com/share/f6ba57df4e99)*
+
+Didn't think I was going to start January with a wake-up call, but thought I would turn lemons into lemonade.
+
+Happy January,
+Ari
 
 <!--
 ## Word Regarding EMS Data Sources
