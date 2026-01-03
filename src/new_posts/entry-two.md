@@ -105,8 +105,8 @@ It's hard to imagine a world without the modern EMS system. We hear ambulances a
 ### 1. The "Funeral Home" Era (Pre-1966)
 Before the mid-60s, there was no "EMT" as we know it. In many American towns, the only vehicle capable of carrying a person lying down was a hearse.
 
-![Hearse Photo](https://upload.wikimedia.org/wikipedia/commons/b/b5/Reagan_hearse.jpg "Hearse Photo")
-(*Hearse*, Source: Wikipedia)
+![Hearse Photo](https://magazine.northeast.aaa.com/wp-content/uploads/2021/10/4081282827_21f43c6277_c.jpg "Hearse Photo")
+(*Hearse*, Source: AAA.com)
 
 Consequently, **funeral homes** provided nearly half of the country's ambulance services at the time. There was zero medical care in the back. The goal was simply to "scoop" the victim and "run" to a hospital as fast as possible. These "ambulance attendants" often had no more than basic first-aid, if even that.
 
