@@ -1,98 +1,86 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 
-html,
-body {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Crimson Text', serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-html {
-  height: 100vh;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Crimson Text', serif;
+  background: #fefefe;
 }
 
 .page {
-  width: 100vw;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-block: clamp(1rem, 4vw, 2.5rem);
 }
 
 .block_container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  line-height: 2.5em;
+  width: min(1100px, 95%);
+  margin: 0 auto;
+  padding: clamp(1.25rem, 3vw, 2.75rem);
+  line-height: 2.3em;
+  position: relative;
 }
 
-@media only screen and (min-width: 0px) {
-  .block_container {
-    width: 90%;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-  .block_container {
-    width: 650px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .block_container {
-    width: 700px;
-  }
+.note_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .home_nav {
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin-top: 0;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-bottom: 16px;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 0.25rem;
+  padding-inline: clamp(0.5rem, 2vw, 1.2rem);
 }
 
-@media only screen and (max-width: 540px) {
-  .home_nav {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
+.note_container .home_nav {
+  padding-block: 0;
+  padding-inline: 0;
 }
 
 .home_links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  margin: 0px;
-  font-family: 'Crimson Text', serif;
-}
-
-@media only screen and (max-width: 550px) {
-  .home_links {
-    padding: 0px;
-  }
-}
-
-.home_links>a {
-  text-decoration: none;
-  color: #171717;
-}
-
-.home_links>a>li {
-  padding-left: 20px;
-  padding-right: 20px;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
   list-style: none;
-  font-size: 20px;
-  border-right: 1px solid black;
+  font-family: 'Crimson Text', serif;
+  align-items: center;
+  font-size: clamp(1.05rem, 2.2vw, 1.45rem);
 }
 
-.home_links>a:last-child>li {
+.home_links li {
+  padding: 0.45rem 0.85rem;
+  border-right: 1px solid #111;
+  font-size: clamp(1.2rem, 1.4vw, 1.35rem);
+}
+
+.home_links li:last-child {
   border-right: none;
 }
 
+.home_links a {
+  text-decoration: none;
+  color: #111;
+  display: inline-block;
+}
+
 .home_title {
-  font-size: 26px;
+  font-size: clamp(1.75rem, 2.6vw, 2.4rem);
   font-family: 'Crimson Text', serif;
 }
 
@@ -102,25 +90,282 @@ html {
 }
 
 .welcome {
-  position: absolute;
-  top: 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  position: relative;
   display: flex;
+  align-items: flex-end;
+  min-height: clamp(320px, 70vw, 460px);
   z-index: -1;
-  font-weight: normal;
-  font-size: 60px;
-  line-height: 60px;
+  font-weight: 400;
+  font-size: clamp(2.6rem, 6vw, 4.5rem);
+  line-height: 1.25;
+  padding-bottom: 1rem;
 }
 
 .welcome>div {
-  display: relative;
-  margin-top: auto;
-  margin-bottom: auto;
+  width: min(760px, 100%);
+  margin: 0;
+}
+
+.posts-page {
+  padding-top: clamp(1.5rem, 5vw, 3rem);
+}
+
+.posts-grid {
+  display: flex;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.posts-list {
+  flex: 1 1 320px;
+  order: 1;
+}
+
+.posts-list .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: #777;
+  margin: 0;
+}
+
+.posts-list h1 {
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+}
+
+.posts-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.posts-list li {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.see-more {
+  margin-top: 1rem;
+}
+
+.see-more-btn {
+  display: inline-block;
+  padding: 0.65rem 1.6rem;
+  border: 1px solid #111;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
+}
+
+.see-more-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.posts-list a {
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.posts-list a:hover {
+  text-decoration: underline;
+}
+
+.post-date {
+  display: block;
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 0.25rem;
+  font-family: "Crimson Text", serif;
+}
+
+.posts-canvas {
+  flex: 1 1 320px;
+  order: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 240px;
+  max-width: min(520px, 70vw);
+  width: min(520px, 70vw);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.posts-canvas canvas {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: block;
+  border: none;
+  background-color: #fefefe;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+}
+
+.note-article {
+  max-width: 860px;
+  margin-top: clamp(1.5rem, 4vw, 3rem);
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  line-height: 1.8;
+  padding-bottom: 2rem;
+}
+
+.note-article h1 {
+  margin-top: 0;
+  margin-bottom: 0.85rem;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  letter-spacing: 0.01em;
+}
+
+.note-article h2 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.65rem;
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  letter-spacing: 0.01em;
+}
+
+.note-article h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.35rem, 2.4vw, 1.6rem);
+  letter-spacing: 0.01em;
+}
+
+.note-article p {
+  margin-bottom: 1rem;
+}
+
+.golden-hour-module {
+  background: #ffffff;
+  border-radius: 30px;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  box-shadow: 0 20px 45px rgba(17, 17, 17, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  margin: clamp(1.25rem, 3vw, 2rem) 0;
+}
+
+.golden-hour-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+}
+
+.golden-hour-controls label {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.golden-hour-controls span {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-left: 0.4rem;
+  color: #4a90e2;
+}
+
+.golden-hour-controls input[type='range'] {
+  flex: 1;
+  min-width: 180px;
+}
+
+.run-clock-btn {
+  border: none;
+  background: #111;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.45rem 1.15rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.run-clock-btn:hover {
+  background: #222;
+}
+
+.golden-hour-grids {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.golden-hour-grid {
+  border-radius: 20px;
+  background: #f7f7fb;
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.golden-hour-grid canvas {
+  width: 100%;
+  height: 180px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.07);
+}
+
+.golden-hour-grid h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+.golden-hour-grid .stats {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.95rem;
+  color: #111;
+  font-weight: 500;
+}
+
+.golden-hour-grid .stats span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+.golden-hour-grid .stats span strong {
+  font-size: 1.2rem;
+}
+
+.golden-hour-grid .tag {
+  font-size: 0.85rem;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.note-article ol {
+  list-style: decimal;
+  margin-left: 1.5rem;
+  padding-left: 0;
+  margin-bottom: 1rem;
+  line-height: 1.9;
 }
 
 .definition {
@@ -363,6 +608,27 @@ html {
 @media only screen and (max-width: 680px) {
   .pinch3 {
     display: block;
+  }
+}
+
+@media (max-width: 780px) {
+  .posts-grid {
+    flex-direction: column;
+  }
+
+  .posts-canvas {
+    order: -1;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .posts-list li {
+    padding-bottom: 0.5rem;
+  }
+
+  .posts-list {
+    order: 0;
   }
 }
 

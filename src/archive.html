@@ -1,48 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: "layouts/home.html"
+title: "Archive"
+---
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ari Katz - Posts</title>
-  <link rel="stylesheet" href="/css/my_style.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/tailwind_styles.css">
-</head>
-
-<body>
-  
-
-
-<div class="page">
-  <div class="block_container">
-    <div class="home_nav">
-      <div class="home_title"><a href="/">Ari Katz</a></div>
-      <ul class="home_links">
-        <li><a href="/">Posts</a></li>
-        <li><a href="/new_posts/entry-one/">Info</a></li>
-      </ul>
-    </div>
-    
 <div class="posts-page">
   <div class="posts-grid">
     <section class="posts-list">
-      <p class="eyebrow">LATEST</p>
-      <h1>Notes &amp; chats</h1>
-      <ul><li>
-          <span class="post-date">2026-01-03</span>
-          <a href="/new_posts/entry-three/">The Robot Brain Problem</a>
-        </li><li>
-          <span class="post-date">2026-01-01</span>
-          <a href="/new_posts/entry-two/">Happy New Years?</a>
-        </li><li>
-          <span class="post-date">2025-12-31</span>
-          <a href="/new_posts/entry-one/">Opportunity to connect, in search of GTM/SE roles at an AI company in SF</a>
-        </li></ul>
-      <div class="see-more">
-        <a class="see-more-btn" href="/archive">See archived notes</a>
-      </div>
+      <p class="eyebrow">Archive</p>
+      <h1>All notes & chats</h1>
+      <ul>
+        {%- if collections.newPosts.length -%}
+        {%- for post in collections.newPosts -%}
+        <li>
+          <span class="post-date">{{ post.date | simpleDate }}</span>
+          <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </li>
+        {%- endfor -%}
+        {%- else -%}
+        <li>The archive is empty for now.</li>
+        {%- endif -%}
+      </ul>
     </section>
 
     <section class="posts-canvas">
@@ -203,10 +180,3 @@
     requestAnimationFrame(loop);
   })();
 </script>
-  </div>
-</div>
-
-  <script src="/js/golden-hour.js" defer=""></script>
-</body>
-
-</html>

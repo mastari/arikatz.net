@@ -1,53 +1,186 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: "layouts/home.html"
+title: "Posts"
+---
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ari Katz - Home</title>
-  <link rel="stylesheet" href="/css/my_style.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/tailwind_styles.css">
-</head>
-
-<body>
-
-
-
-  <div class="page">
-    <div class="block_container">
-      <div class="home_nav">
-        <div class="home_title"><a href="/">Ari Katz</a></div>
-        <ul class="home_links">
-          <a href="/resume">
-            <li>Resume</li>
-          </a>
-          <a href="/about">
-            <li>About Me</li>
-          </a>
-        </ul>
+<div class="posts-page">
+  <div class="posts-grid">
+    <section class="posts-list">
+      <p class="eyebrow">LATEST</p>
+      <h1>Notes & chats</h1>
+      <ul>
+        {%- set latest = collections.newPosts | take(4) -%}
+        {%- if latest.length -%}
+        {%- for post in latest -%}
+        <li>
+          <span class="post-date">{{ post.date | simpleDate }}</span>
+          <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </li>
+        {%- endfor -%}
+        {%- else -%}
+        <li>Fresh thoughts arriving soon.</li>
+        {%- endif -%}
+      </ul>
+      <div class="see-more">
+        <a class="see-more-btn" href="/archive">See archived notes</a>
       </div>
+    </section>
 
-      <script src="js/p5/p5.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-      <div class="welcome">
-        <div style="font-size: 40px;">Currents <span style="font-size:20px;">[May to today]</span><br>
-          <ul style="font-size:20px;">
-            <li>UI/UX Engineer, Physics Counsel (TopShot)</li>
-            <li>iOS Engineer (The Intercept) </li>
-            <li>Physics 137A: Quantum Mechanics (Berkeley)</li>
-            <li>HistArt 88: Arts of Latin America (Berkeley)</li>
-
-          </ul>
-
-        </div>
-      </div>
-      <script src="js/home_attractor.js"></script>
-    </div>
+    <section class="posts-canvas">
+      <canvas id="hero-canvas" role="presentation" aria-hidden="true"></canvas>
+    </section>
   </div>
+</div>
 
-</body>
+<script>
+  (function () {
+    const canvas = document.getElementById('hero-canvas');
+    if (!canvas) return;
 
-</html>
+    const container = canvas.parentElement;
+    const ctx = canvas.getContext('2d');
+    const dpr = Math.max(1, window.devicePixelRatio || 1);
+    const state = {
+      x: 0.1,
+      y: 0,
+      z: 0,
+      size: 0,
+      scale: 11,
+      scaleFactor: 11,
+      sigma: 9,
+      rho: 29,
+      beta: 2.65,
+      dt: 0.01,
+      translateX: 0,
+      translateY: -280,
+      rotation: 0,
+      path: [],
+    };
+
+    function drawBorder(size) {
+      const inset = 4;
+      const radius = 20;
+      ctx.lineWidth = 1;
+      ctx.strokeStyle = 'rgba(34, 34, 34, 0.35)';
+      ctx.beginPath();
+      ctx.moveTo(inset + radius, inset);
+      ctx.lineTo(size - inset - radius, inset);
+      ctx.quadraticCurveTo(size - inset, inset, size - inset, inset + radius);
+      ctx.lineTo(size - inset, size - inset - radius);
+      ctx.quadraticCurveTo(size - inset, size - inset, size - inset - radius, size - inset);
+      ctx.lineTo(inset + radius, size - inset);
+      ctx.quadraticCurveTo(inset, size - inset, inset, size - inset - radius);
+      ctx.lineTo(inset, inset + radius);
+      ctx.quadraticCurveTo(inset, inset, inset + radius, inset);
+      ctx.stroke();
+    }
+
+    function computeSize() {
+      if (!container) return 360;
+      const available = container.clientWidth;
+      return Math.max(260, Math.min(available, 520));
+    }
+
+    function resizeCanvas() {
+      const size = computeSize();
+      canvas.style.width = `${size}px`;
+      canvas.style.height = `${size}px`;
+      canvas.width = size * dpr;
+      canvas.height = size * dpr;
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.scale(dpr, dpr);
+      state.size = size;
+      state.scale = state.scaleFactor;
+    }
+
+    function mapPoint(x, z, size) {
+      const center = size / 2;
+      const px = center + x * state.scale;
+      const py = center + z * state.scale;
+      const angle = (state.rotation * Math.PI) / 180;
+      const cos = Math.cos(angle);
+      const sin = Math.sin(angle);
+      const dx = px - center;
+      const dy = py - center;
+      const rotatedX = dx * cos - dy * sin;
+      const rotatedY = dx * sin + dy * cos;
+      return {
+        x: center + rotatedX + state.translateX,
+        y: center + rotatedY + state.translateY,
+      };
+    }
+
+    function draw() {
+      const size = state.size;
+      ctx.clearRect(0, 0, size, size);
+      drawBorder(size);
+      if (state.path.length > 1) {
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(26, 114, 195, 0.7)';
+        ctx.lineWidth = 2;
+        state.path.forEach((point, index) => {
+          const mapped = mapPoint(point.x, point.z, size);
+          if (index === 0) {
+            ctx.moveTo(mapped.x, mapped.y);
+          } else {
+            ctx.lineTo(mapped.x, mapped.y);
+          }
+        });
+        ctx.stroke();
+      }
+      const current = mapPoint(state.x, state.z, size);
+      ctx.fillStyle = '#ffb142';
+      ctx.beginPath();
+      ctx.arc(current.x, current.y, 4, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    function update(dt) {
+      const { sigma, rho, beta } = state;
+      const deriv = (x, y, z) => {
+        const dx = sigma * (y - x);
+        const dy = x * (rho - z) - y;
+        const dz = x * y - beta * z;
+        return { dx, dy, dz };
+      };
+      const k1 = deriv(state.x, state.y, state.z);
+      const k2 = deriv(
+        state.x + k1.dx * dt * 0.5,
+        state.y + k1.dy * dt * 0.5,
+        state.z + k1.dz * dt * 0.5
+      );
+      const k3 = deriv(
+        state.x + k2.dx * dt * 0.5,
+        state.y + k2.dy * dt * 0.5,
+        state.z + k2.dz * dt * 0.5
+      );
+      const k4 = deriv(
+        state.x + k3.dx * dt,
+        state.y + k3.dy * dt,
+        state.z + k3.dz * dt
+      );
+      state.x += (dt / 6) * (k1.dx + 2 * k2.dx + 2 * k3.dx + k4.dx);
+      state.y += (dt / 6) * (k1.dy + 2 * k2.dy + 2 * k3.dy + k4.dy);
+      state.z += (dt / 6) * (k1.dz + 2 * k2.dz + 2 * k3.dz + k4.dz);
+      state.path.push({ x: state.x, z: state.z });
+      if (state.path.length > 160) {
+        state.path.shift();
+      }
+    }
+
+    function loop(timestamp) {
+      const wave = Math.sin((2 * Math.PI * timestamp) / 3000);
+      state.dt = 0.015 + 0.005 * wave;
+      draw();
+      update(state.dt);
+      requestAnimationFrame(loop);
+    }
+
+    window.addEventListener('resize', () => {
+      resizeCanvas();
+    });
+
+    resizeCanvas();
+    requestAnimationFrame(loop);
+  })();
+</script>

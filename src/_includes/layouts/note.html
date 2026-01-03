@@ -1,9 +1,8 @@
 {% extends "layouts/base.html" %}
 {% block content %}
 
-
 <div class="page">
-  <div class="block_container">
+  <div class="block_container note_container">
     <div class="home_nav">
       <div class="home_title"><a href="/">Ari Katz</a></div>
       <ul class="home_links">
@@ -11,7 +10,9 @@
         <li><a href="/new_posts/entry-one/">Info</a></li>
       </ul>
     </div>
-    {{ content | safe }}
+    <article class="note-article">
+      {{ content | safe }}
+    </article>
   </div>
 </div>
 {% endblock %}

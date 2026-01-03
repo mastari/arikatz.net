@@ -1,49 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: "layouts/home.html"
+title: "Posts"
+---
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ari Katz - Posts</title>
-  <link rel="stylesheet" href="/css/my_style.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/tailwind_styles.css">
-</head>
-
-<body>
-  
-
-
-<div class="page">
-  <div class="block_container">
-    <div class="home_nav">
-      <div class="home_title"><a href="/">Ari Katz</a></div>
-      <ul class="home_links">
-        <li><a href="/">Posts</a></li>
-        <li><a href="/new_posts/entry-one/">Info</a></li>
-      </ul>
-    </div>
-    
 <div class="posts-page">
   <div class="posts-grid">
     <section class="posts-list">
-      <p class="eyebrow">LATEST</p>
+      <p class="eyebrow">Latest</p>
       <h1>Notes &amp; chats</h1>
-      <ul><li>
-          <span class="post-date">2026-01-03</span>
-          <a href="/new_posts/entry-three/">The Robot Brain Problem</a>
-        </li><li>
-          <span class="post-date">2026-01-01</span>
-          <a href="/new_posts/entry-two/">Happy New Years?</a>
-        </li><li>
-          <span class="post-date">2025-12-31</span>
-          <a href="/new_posts/entry-one/">Opportunity to connect, in search of GTM/SE roles at an AI company in SF</a>
-        </li></ul>
-      <div class="see-more">
-        <a class="see-more-btn" href="/archive">See archived notes</a>
-      </div>
-    </section>
+      <ul>
+      {%- set latestPosts = collections.posts | take(4) -%}
+        {%- if latestPosts.length -%}
+          {%- for post in latestPosts -%}
+            <li>
+              <span class="post-date">{{ post.date | simpleDate }}</span>
+              <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </li>
+          {%- endfor -%}
+      {%- else -%}
+        <li>No posts yet — stay tuned.</li>
+      {%- endif -%}
+    </ul>
+    <div class="see-more">
+      <a href="/archive" class="see-more-btn">See more notes</a>
+    </div>
+  </section>
 
     <section class="posts-canvas">
       <canvas id="hero-canvas" role="presentation" aria-hidden="true"></canvas>
@@ -187,7 +168,10 @@
       }
     }
 
+    let lastTimestamp = 0;
+
     function loop(timestamp) {
+      if (!lastTimestamp) lastTimestamp = timestamp;
       const wave = Math.sin((2 * Math.PI * timestamp) / 3000);
       state.dt = 0.015 + 0.005 * wave;
       draw();
@@ -203,10 +187,3 @@
     requestAnimationFrame(loop);
   })();
 </script>
-  </div>
-</div>
-
-  <script src="/js/golden-hour.js" defer=""></script>
-</body>
-
-</html>

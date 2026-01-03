@@ -1,0 +1,187 @@
+---
+title: "Happy New Years?"
+date: 2026-01-01
+tags: new_entry
+layout: "layouts/note.html"
+---
+# Happy New Years!
+
+Last night was 2026's Eve.
+
+On the walk back to the car, my friends and I heard a crash and our eyes darted to a young woman who had lost control of her scooter and fell, rendering her unconscious.
+
+Fortunately, in our group was an impressive student and well-trained EMT who administered care until the ambulance arrived.
+
+I was simultaneously shocked, grateful, and curious at the same time.
+
+## Questions
+
+*What would this situation look like without proper care?*
+
+*When did the EMS (Emergency Medical Services) system begin in the US?*
+
+*Where are EMS providers needed the most right now?*
+
+*How can I ensure I can do my part?*
+
+## The Golden Hour
+
+Given that this scooter crash was a high-energy trauma to the head resulting in unconsciousness, the minutes after the primary injury were critical. As a trained EMT you are able to open the airway and ensure oxygenation. Without him at the scene, her brain could have suffered **hypoxia** (lack of oxygen), which could have led to permanent disability or death.
+
+In general, the "golden hour" is the period of time after a traumatic injury where there is the highest likelihood that prompt medical and surgical treatment will prevent death.
+
+![Golden Hour Curves](https://upload.wikimedia.org/wikipedia/commons/3/35/Golden_hour_graph.png)
+(*Golden Hour Curves*, Wikipedia)
+
+## Run The Clock, See How Prompt Intervention Saves Lives
+Picture this, your loved one's heart stops, breathing stops, or bleeds. Run the clock to see outcomes in these different cases. 
+<div class="golden-hour-module">
+  <div class="golden-hour-controls">
+    <label for="golden-hour-slider">
+      Minutes before care:<span data-gh-minutes>10 minutes</span>
+    </label>
+    <input
+      type="range"
+      id="golden-hour-slider"
+      min="0"
+      max="37"
+      value="10"
+      step="0.1"
+      data-gh-slider
+    />
+    <button type="button" class="run-clock-btn" data-gh-run>Run the clock</button>
+  </div>
+  <div class="golden-hour-grids">
+    <div class="golden-hour-grid" data-gh-target="heart">
+      <h3>Heart stops</h3>
+      <canvas width="260" height="180"></canvas>
+      <div class="stats">
+        <span><strong data-gh-stat="alive">20</strong> Will Survive</span>
+        <span><strong data-gh-stat="dead">0</strong> Will Die</span>
+      </div>
+    </div>
+    <div class="golden-hour-grid" data-gh-target="breathing">
+      <h3>Respiration stops</h3>
+      <canvas width="260" height="180"></canvas>
+      <div class="stats">
+        <span><strong data-gh-stat="alive">20</strong> Will Survive</span>
+        <span><strong data-gh-stat="dead">0</strong> Will Die</span>
+      </div>
+    </div>
+    <div class="golden-hour-grid" data-gh-target="bleeding">
+      <h3>Massive bleeding</h3>
+      <canvas width="260" height="180"></canvas>
+      <div class="stats">
+        <span><strong data-gh-stat="alive">20</strong> Will Survive</span>
+        <span><strong data-gh-stat="dead">0</strong> Will Die</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+(Note: These scenarios reflect the general medical priority, but the timescales will vary depending on the severity of the exact situation)
+
+Since most ambulances don't magically appear in 1 minute, caring  bystanders can reduce the chance of death significantly, even without surgical intervention. This makes public health knowledge and helping each other as **humanity's greatest defense** against death.
+
+### Heart Stop
+
+If you happen to be a survivor of a heart stoppage, **past the 4 minute mark irreversible brain damage occurs due to lack of oxygen**. For every minute CPR and defibrillation are delayed, survival odds drop 10%.
+
+### Respiration Stop
+
+If the heart is beating but person stops breathing (respiratory arrest), the heart can usually continue to pump for several minutes until it becomes hypoxic and stops.
+
+### Massive Bleeding
+
+Life threatening bleeding like a femoral artery tear can lead to death in **just 5 minutes without intervention**. However, major bleeds in non-catastrophic areas are closer to the 30+ minute window.
+
+Regardless, making a tourniquet with anything available is the way to go.
+
+
+## A Short, Bizarre, and True History of The EMS System
+
+It's hard to imagine a world without the modern EMS system. We hear ambulances almost everyday. Unfortunately, there used to be a world without a more primitive one, which makes me even more grateful to be alive in 2026.
+
+### 1. The "Funeral Home" Era (Pre-1966)
+Before the mid-60s, there was no "EMT" as we know it. In many American towns, the only vehicle capable of carrying a person lying down was a hearse.
+
+![Hearse Photo](https://upload.wikimedia.org/wikipedia/commons/b/b5/Reagan_hearse.jpg "Hearse Photo")
+(*Hearse*, Source: Wikipedia)
+
+Consequently, **funeral homes** provided nearly half of the country's ambulance services at the time. There was zero medical care in the back. The goal was simply to "scoop" the victim and "run" to a hospital as fast as possible. These "ambulance attendants" often had no more than basic first-aid, if even that.
+
+If you're a third generation American, this is likely the ambulance that your mother's mother was rushed to the hospital in if they had an accident.
+
+### 2. The 1966 "White Paper"
+The turning point came from a grim realization during the Vietnam War. A landmark report titled *Accidental Death and Disability: The Neglected Disease of Modern Society* revealed a shocking statistic: **A soldier wounded in a Vietnamese jungle had a higher chance of survival than a civilian injured on a California highway.** Essentially, we were shamed into creating the first national standards for training and ambulances in the U.S.
+
+Soon, it wouldn't be more than a year until Pennsylvania would spearhead the training what would be called a *paramedic*.
+
+### 3. Freedom House: The First Paramedics (1967)
+In Pittsburgh, the **Freedom House Ambulance Service** became the first in the nation to train "Paramedics." Composed of Black men and women from the Hill District, they were trained by Dr. Peter Safar (the father of CPR). They quite literally wrote the first manuals for how to save a life in the back of a moving vehicle, proving that advanced medical care could happen on the street.
+
+![Freedom House Ambulance Service](https://www.heinzhistorycenter.org/wp-content/uploads/2022/02/Ch2_Freedom-House_Caliguiri15.jpg "Freedom House Ambulance Service")
+
+### 4. The *Emergency!* Effect (1972)
+Pop-culture is no stranger to changing what we demand out of the real world. Spielberg's *Jaws* made everyone start killing sharks on-site, and then activists had to re-educate the public that shark attacks were uncommon. And more importantly, we were losing a crucial role in maintaining healthy ocean ecosystems with this irrational fear. Movies and songs are powerful. They *market ideas*  into the mainstream, and change lives for better or worse. Just find a girl who's favorite series is *Sex and the City*, then guess where they want to live...
+
+Originally, ambulance EMS was popularized by the fictional drama, *Emergency!*  The show followed firefighters and paramedic units in LA. Before this show, most people didn't know what a paramedic was. The show’s popularity created massive public demand, forcing politicians to pass laws allowing non-doctors to perform medical procedures. Eventually, this gave birth to the *EMS Systems Act of 1973*, which established 911 systems, radio communications between ambulances and hospitals, and standardized certification so **regular people could get involved in public health emergencies.**
+
+## AI Isn't Ready To Take The Wheel (Yet), But Employees Are Already Leaving
+
+EMS response is a chain of events that need to take place from the moment someone gets injured to the point at which they are stabilized. Most of which are paid positions. However, these EMS personnel involved in saving a lives are getting exhausted. With burnout rates and turnover rates hitting record highs, paired with low pay, large parts of the EMS response chains in every state are slowing down. This means more emergency cases will slide into the high mortality zones of the golden hour curves. So, what are we doing about it?
+
+This is truly a problem that needs to be solved with policy, and I'm not sure how its going to change. Maybe we need another TV show? Probably not. In the age of AI, we are more keen on getting an AI to do what we want rather than a human being. Automated solutions to take humans out of the loop is inevitable for work that humans say stress them out and want to be paid more to do. And often, the robots are safer and cheaper to operate as time goes on, whereas humans usually get more expensive and tired. Yet, as of January 2026, we don't have the robotics for comprehensive EMS care so we need to solve the problem at hand with better lifestyles for these essential workers.
+
+The solution to this problem will pivot back to hiring machines once the **robotics gap** in AI is closed, which will be elaborated on in *[tomorrow's post](/new_posts/entry-three/)*.
+
+## Innovations Of Today
+
+The problems remaining in EMS today is addressing emergencies earlier in the "golden hour" previously mentioned. However, these are some issues in public health that can get in the way of that:
+
+1. Proximity of tools (Bandaging, AEDs, etc)
+2. Knowledge of tools (How to cover laceration, how to use AEDs)
+
+AI has a **rare opportunity to solve both tool proximity and knowledge gaps** through improved instruction to non-trained civilians and automatic deployment. Here's a paper on a potentially promising step in the right direction,
+
+*[See Paper On Drone Delivered AED](https://corporate.dukehealth.org/news/drones-now-deliver-aeds-during-real-911-calls-first-its-kind-us-study)*
+
+In this paper, drones are capable of delivering AEDs rapidly, however the current bottleneck is the untrained citizen using it.
+
+## Pending Questions
+
+**Where are EMS providers needed the most right now?**
+
+**How can I ensure I can do my part?**
+
+*[Click for some good answers...](https://gemini.google.com/share/f6ba57df4e99)*
+
+<!--
+## Word Regarding EMS Data Sources
+
+If you want information on EMS personnel, there are a few options:
+
+1. The National Registry of EMTs (NREMT)
+2. The National EMS Coordinated Database (NEMSCD)
+3. State EMS Offices (Primary Source)
+
+Plainly, EMS personnel data comes from State EMS Offices.
+
+NEMSCD has made strides in unifying data, standards, and increasing mobility as to where EMS providers can work in a group of participating 25 States. However, there is no *federal* government organization aggregating EMS office data from all 50 States.
+
+That being said, you could go to the U.S. Bureau of Labor Statistics to find data on *paid providers*, which will grossly underestimate the amount of certified people. However, REMT is the non-government organization that has nationwide data on *certified people*. This is due to the clever fact that most states require a certificate from NREMT before applying for a State license, and in the process they create a permanent EMS-ID that identifies providers across State lines. **This is the backbone of the nation's statistics on EMS, and NREMT provides annual reports on their database.**
+
+### NREMT Statistics
+
+At *[nremt.org](https://nremt.org/)*, they report national EMS statistics like:
+
+1. The nationally certified EMS Clinicians by State
+2. The national EMS certification required for initial State licensure
+3. Utilizations of National EMS Certification
+4. EMT first attempt pass rates by State
+5. EMT cumulative third attempt pass rates by State
+6. Paramedic first attempt pass rates by State
+7. Paramedic cumulative third attempt pass rates by State
+8. Annual certification report
+
+-->

@@ -18,9 +18,40 @@ module.exports = function (eleventyConfig) {
     return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
   });
 
+  eleventyConfig.addFilter("take", (array, count) => {
+    if (!Array.isArray(array)) return [];
+    return array.slice(0, count);
+  });
+
   eleventyConfig.addFilter("simpleDate", (dateString) => {
     day = new Date(dateString).toISOString().split('T')[0]
     return day;
+  });
+
+  eleventyConfig.addCollection("posts", (collectionApi) => {
+    return collectionApi.getFilteredByTag("_project").sort((a, b) => {
+      const dateA = a.date instanceof Date ? a.date.getTime() : new Date(a.date).getTime();
+      const dateB = b.date instanceof Date ? b.date.getTime() : new Date(b.date).getTime();
+      return dateB - dateA;
+    });
+  });
+
+  eleventyConfig.addCollection("newPosts", (collectionApi) => {
+    return collectionApi
+      .getAll()
+      .filter((item) => {
+        const tags = item.data && item.data.tags;
+        if (!tags) return false;
+        if (Array.isArray(tags)) {
+          return tags.includes("new_entry");
+        }
+        return tags === "new_entry";
+      })
+      .sort((a, b) => {
+        const dateA = a.date instanceof Date ? a.date.getTime() : new Date(a.date).getTime();
+        const dateB = b.date instanceof Date ? b.date.getTime() : new Date(b.date).getTime();
+        return dateB - dateA;
+      });
   });
 
   return {
