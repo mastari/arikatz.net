@@ -26,7 +26,7 @@ I was simultaneously shocked, grateful, and curious at the same time.
 
 ## The Golden Hour
 
-Given that this scooter crash was a high-energy trauma to the head resulting in unconsciousness, the minutes after the primary injury were critical. As a trained EMT you are able to open the airway and ensure oxygenation. Without him at the scene, her brain could have suffered **hypoxia** (lack of oxygen), which could have led to permanent disability or death.
+Given that this scooter crash was a high-energy trauma to the head resulting in unconsciousness, the minutes after the primary injury were critical. As a trained EMT you are able to open the airway and ensure oxygenation. Without an EMT at the scene, her brain could have suffered **hypoxia** (lack of oxygen), which could have led to permanent disability or death.
 
 In general, the "golden hour" is the period of time after a traumatic injury where there is the highest likelihood that prompt medical and surgical treatment will prevent death.
 
