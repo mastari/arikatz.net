@@ -26,7 +26,7 @@ I was simultaneously shocked, grateful, and curious at the same time.
 
 ## The Golden Hour
 
-Given that this scooter crash was a high-energy trauma to the head resulting in unconsciousness, the minutes after the primary injury were critical. As a trained EMT you are able to open the airway and ensure oxygenation. Without an EMT at the scene, her brain could have suffered **hypoxia** (lack of oxygen), which could have led to permanent disability or death.
+Given that this scooter crash was a high-energy trauma to the head resulting in unconsciousness, the minutes after the primary injury were critical. As a trained EMT you are able to open the airway and ensure oxygenation. Without an EMT at the scene, her brain could have suffered hypoxia (lack of oxygen), which could have led to permanent disability or death.
 
 In general, the "golden hour" is the period of time after a traumatic injury where there is the highest likelihood that prompt medical and surgical treatment will prevent death.
 
@@ -81,11 +81,11 @@ Picture this, your loved one's heart stops, breathing stops, or bleeds. Run the 
 
 (Note: These scenarios reflect the general medical priority, but the timescales will vary depending on the severity of the exact situation)
 
-Since most ambulances don't magically appear in 1 minute, caring  bystanders can reduce the chance of death significantly, even without surgical intervention. This makes public health knowledge and helping each other as **humanity's greatest defense** against preventable deaths.
+Since most ambulances don't magically appear in 1 minute, caring  bystanders can reduce the chance of death significantly, even without surgical intervention. This makes public health knowledge and helping each other as humanity's greatest defense against preventable deaths.
 
 ### Heart Stop
 
-If you happen to be a survivor of a heart stoppage, **past the 4 minute mark irreversible brain damage occurs due to lack of oxygen**. For every minute CPR and defibrillation are delayed, survival odds drop 10%.
+If you happen to be a survivor of a heart stoppage, past the 4 minute mark irreversible brain damage occurs due to lack of oxygen. For every minute CPR and defibrillation are delayed, survival odds drop 10%.
 
 ### Respiration Stop
 
@@ -93,7 +93,7 @@ If the heart is beating but person stops breathing (respiratory arrest), the hea
 
 ### Massive Bleeding
 
-Life threatening bleeding like a femoral artery tear can lead to death in **just 5 minutes without intervention**. However, major bleeds in non-catastrophic areas are closer to the 30+ minute window.
+Life threatening bleeding like a femoral artery tear can lead to death in just 5 minutes without intervention. However, major bleeds in non-catastrophic areas are closer to the 30+ minute window.
 
 Regardless, making a tourniquet with anything available is the way to go.
 
@@ -108,17 +108,17 @@ Before the mid-60s, there was no "EMT" as we know it. In many American towns, th
 ![Hearse Photo](https://magazine.northeast.aaa.com/wp-content/uploads/2021/10/4081282827_21f43c6277_c.jpg "Hearse Photo")
 (*Hearse*, Source: AAA.com)
 
-Consequently, **funeral homes** provided nearly half of the country's ambulance services at the time. There was zero medical care in the back. The goal was simply to "scoop" the victim and "run" to a hospital as fast as possible. These "ambulance attendants" often had no more than basic first-aid, if even that.
+Consequently, funeral homes provided nearly half of the country's ambulance services at the time. There was zero medical care in the back. The goal was simply to "scoop" the victim and "run" to a hospital as fast as possible. These "ambulance attendants" often had no more than basic first-aid, if even that.
 
 If you're a third generation American, this is likely the ambulance that your mother's mother was rushed to the hospital in if they had an accident.
 
 ### 2. The 1966 "White Paper"
-The turning point came from a grim realization during the Vietnam War. A landmark report titled *Accidental Death and Disability: The Neglected Disease of Modern Society* revealed a shocking statistic: **A soldier wounded in a Vietnamese jungle had a higher chance of survival than a civilian injured on a California highway.** Essentially, we were shamed into creating the first national standards for training and ambulances in the U.S.
+The turning point came from a grim realization during the Vietnam War. A landmark report titled *Accidental Death and Disability: The Neglected Disease of Modern Society* revealed a shocking statistic: A soldier wounded in a Vietnamese jungle had a higher chance of survival than a civilian injured on a California highway. Essentially, we were shamed into creating the first national standards for training and ambulances in the U.S.
 
 Soon, it wouldn't be more than a year until Pennsylvania would spearhead the training for what would be called a *paramedic*.
 
 ### 3. Freedom House: The First Paramedics (1967)
-In Pittsburgh, the **Freedom House Ambulance Service** became the first in the nation to train "Paramedics." Composed of Black men and women from the Hill District, they were trained by Dr. Peter Safar (the father of CPR). They quite literally wrote the first manuals for how to save a life in the back of a moving vehicle, proving that advanced medical care could happen on the street.
+In Pittsburgh, the Freedom House Ambulance Service became the first in the nation to train "Paramedics." Composed of Black men and women from the Hill District, they were trained by Dr. Peter Safar (the father of CPR). They quite literally wrote the first manuals for how to save a life in the back of a moving vehicle, proving that advanced medical care could happen on the street.
 
 ![Freedom House Ambulance Service](https://www.heinzhistorycenter.org/wp-content/uploads/2022/02/Ch2_Freedom-House_Caliguiri15.jpg "Freedom House Ambulance Service")
 (*Freedom House Ambulance Service*, Source: Heinz History Center)
@@ -126,7 +126,7 @@ In Pittsburgh, the **Freedom House Ambulance Service** became the first in the n
 ### 4. The *Emergency!* Effect (1972)
 Pop-culture is no stranger to changing what we demand out of the real world. Spielberg's *Jaws* made everyone start killing sharks on-site, and then activists had to re-educate the public that shark attacks were uncommon. And more importantly, we were losing a crucial role in maintaining healthy ocean ecosystems with this irrational fear. Movies and songs are powerful. They *market ideas*  into the mainstream, and change lives for better or worse. Just find a girl who's favorite series is *Sex And The City*, then guess where they want to live...
 
-Originally, ambulance EMS was popularized by the fictional drama, *Emergency!*  The show followed firefighters and paramedic units in LA. Before this show, most people didn't know what a paramedic was. The show’s popularity created massive public demand, forcing politicians to pass laws allowing non-doctors to perform medical procedures. Eventually, this gave birth to the *EMS Systems Act of 1973*, which established 911 systems, radio communications between ambulances and hospitals, and standardized certification so **regular people could get involved in public health emergencies.**
+Originally, ambulance EMS was popularized by the fictional drama, *Emergency!*  The show followed firefighters and paramedic units in LA. Before this show, most people didn't know what a paramedic was. The show’s popularity created massive public demand, forcing politicians to pass laws allowing non-doctors to perform medical procedures. Eventually, this gave birth to the *EMS Systems Act of 1973*, which established 911 systems, radio communications between ambulances and hospitals, and standardized certification so regular people could get involved in public health emergencies.
 
 ## AI Isn't Ready To Take The Wheel (Yet), But Employees Are Already Leaving
 
@@ -134,7 +134,7 @@ EMS response is a chain of events that need to take place from the moment someon
 
 This is truly a problem that needs to be solved with policy, and I'm not sure how its going to change. Maybe we need another TV show? Probably not. In the age of AI, we are more keen on getting an AI to do what we want rather than a human being. Automated solutions to take humans out of the loop is inevitable for work that humans say stress them out and want to be paid more to do. And often, the robots are safer and cheaper to operate as time goes on, whereas humans usually get more expensive and tired. Yet, as of January 2026, we don't have the robotics for comprehensive EMS care so we need to solve the problem at hand with better lifestyles for these essential workers.
 
-The solution to this problem will pivot back to hiring machines once the **robotics gap** in AI is closed, which will be elaborated on in *[tomorrow's post](/new_posts/entry-three/)*.
+The solution to this problem will pivot back to hiring machines once the robotics gap in AI is closed, which will be elaborated on in *[tomorrow's post](/new_posts/entry-three/)*.
 
 ## Innovations Of Today
 
@@ -143,7 +143,7 @@ The problems remaining in EMS today is addressing emergencies earlier in the "go
 1. Proximity of tools (Bandaging, AEDs, etc)
 2. Knowledge of tools (How to cover laceration, how to use AEDs)
 
-AI has a **rare opportunity to solve both tool proximity and knowledge gaps** through improved instruction to non-trained civilians and automatic deployment. Here's a paper on a potentially promising step in the right direction,
+AI has a rare opportunity to solve both tool proximity and knowledge gaps through improved instruction to non-trained civilians and automatic deployment. Here's a paper on a potentially promising step in the right direction,
 
 *[See Paper On Drone Delivered AED](https://corporate.dukehealth.org/news/drones-now-deliver-aeds-during-real-911-calls-first-its-kind-us-study)*
 
