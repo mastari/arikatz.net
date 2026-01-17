@@ -1,7 +1,7 @@
 ---
 title: "Return On Prompt"
 date: 2026-01-04
-tags: new_entry
+tags: new_entry_not_ready
 layout: "layouts/note.html"
 ---
 # ROI begins with ROP 
