@@ -4,9 +4,9 @@ date: 2025-12-31
 tags: new_entry
 layout: "layouts/note.html"
 ---
-# Opportunity to connect
+# Current Occupation
 
-**Ari is especially interested in GTM, SDR/BDR, SMB AE, or Sales Engineer roles at an AI company in SF.** (as of January 1, 2026)
+Ari is currently a SWE at Lightfield.
 
 # About Ari
 
@@ -18,7 +18,7 @@ In 2022, Ari continued studying physics at the University of California, Berkele
 
 Today, Ari is graduated and searching for a long term role at an AI company in SF that leverages his technical understanding and clear communication, **determined to push an AI company with ambitious goals to new heights.**
 
-If you are hiring, Ari is available to reach below to discuss mutual opportunities.
+If you are hiring, Ari is available to reach below.
 
 # Contact email
 arikatz.d@gmail.com<br/>
