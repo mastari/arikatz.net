@@ -14,7 +14,7 @@ Ari is a developer, educator, and trusted communicator. Raised in Mill Valley, C
 
 In 2021, Ari was a finalist in the International Breakthrough Junior Challenge, competing against more than 3,400 applicants from 202 countries for a $400,000 prize. The challenge centered on explaining advanced physics concepts to a global audience with clarity and accessibility—an area that has become central to Ari’s work.
 
-In 2022, Ari continued studying physics at the University of California, Berkeley, while also shipping software and applications for businesses. Most notably, Ari developed the mobile news app for a journal read by millions, *[The Intercept](https://theintercept.com)*.
+In 2022, Ari continued studying physics at the University of California, Berkeley, while also shipping software and applications for businesses. Most notably, Ari contributed to the mobile news app doing meaningful international journalism, *[The Intercept](https://theintercept.com)*.
 
 If you are interested in connecting, Ari is available to reach below.
 
