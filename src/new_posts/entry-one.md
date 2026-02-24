@@ -1,5 +1,5 @@
 ---
-title: "Opportunity to connect, in search of GTM/SE roles at an AI company in SF"
+title: "About Me"
 date: 2025-12-31
 tags: new_entry
 layout: "layouts/note.html"
