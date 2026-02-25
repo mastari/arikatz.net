@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ari's Setup</title>
+</head>
+
+<body>
+
+<h1>Ari's Lightfield Setup</h1>
+
+<p>Follow steps in order. Copy commands using the buttons.</p>
+
+<hr>
+
+<h2>0. Login</h2>
+
+<p>
+Download Chrome:<br>
+https://www.google.com/chrome/
+</p>
+
+<p>
+Login using company email.<br><br>
+
+Sign into:
+<ul>
+<li>Google Calendar</li>
+<li>Slack</li>
+<li>Notion</li>
+<li>Linear</li>
+<li>Rippling</li>
+<li>GitHub</li>
+</ul>
+</p>
+
+<hr>
+
+<h2>1. Install Apps</h2>
+
+<p>
+VSCode:<br>
+https://code.visualstudio.com/
+</p>
+
+<p>
+iTerm2:<br>
+https://iterm2.com/
+</p>
+
+<p>Open iTerm2 for remaining steps.</p>
+
+<hr>
+
+<h2>2. Install Apple Developer Tools</h2>
+
+<button onclick="copy('xcode-select --install')">Copy</button>
+<pre>xcode-select --install</pre>
+
+<p>Accept popup installer.</p>
+
+<hr>
+
+<h2>3. Install Homebrew</h2>
+
+<button onclick="copy('/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;')">Copy</button>
+
+<pre>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</pre>
+
+<h3>PATH Fix (Brew Shell Env)</h3>
+
+<button onclick="copy('echo ''eval &quot;$(/opt/homebrew/bin/brew shellenv)&quot;'' >> ~/.zshrc')">Copy</button>
+<pre>echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' &gt;&gt; ~/.zshrc</pre>
+
+<button onclick="copy('eval &quot;$(/opt/homebrew/bin/brew shellenv)&quot;')">Copy</button>
+<pre>eval "$(/opt/homebrew/bin/brew shellenv)"</pre>
+
+<h3>Verify</h3>
+
+<button onclick="copy('brew doctor')">Copy</button>
+<pre>brew doctor</pre>
+
+<hr>
+
+<h2>4. Install Base Packages</h2>
+
+<button onclick="copy(`brew install \
+neovim \
+git \
+ripgrep \
+fd \
+node \
+python \
+lua \
+wget \
+tmux \
+fzf \
+lazygit \
+watchman \
+postgresql@16 \
+redis`)">Copy</button>
+
+<pre>brew install \
+neovim \
+git \
+ripgrep \
+fd \
+node \
+python \
+lua \
+wget \
+tmux \
+fzf \
+lazygit \
+watchman \
+postgresql@16 \
+redis</pre>
+
+<hr>
+
+<h2>5. Install Node Package Managers</h2>
+
+<button onclick="copy('brew install pnpm')">Copy</button>
+<pre>brew install pnpm</pre>
+
+<button onclick="copy('npm install -g yarn')">Copy</button>
+<pre>npm install -g yarn</pre>
+
+<hr>
+
+<h2>6. Install Neovim Config</h2>
+
+<button onclick="copy('mkdir -p ~/.config/nvim')">Copy</button>
+<pre>mkdir -p ~/.config/nvim</pre>
+
+<button onclick="copy('git clone https://github.com/mastari/nvim-config.git ~/.config/nvim')">Copy</button>
+<pre>git clone https://github.com/mastari/nvim-config.git ~/.config/nvim</pre>
+
+<hr>
+
+<h2>7. Test Neovim</h2>
+
+<button onclick="copy('nvim')">Copy</button>
+<pre>nvim</pre>
+
+<p>
+Wait for plugins to install.<br>
+Quit with:
+</p>
+
+<pre>:q</pre>
+
+<hr>
+
+<h2>8. Configure Git Identity</h2>
+
+<button onclick="copy('git config --global user.name &quot;Ari Katz&quot;')">Copy</button>
+<pre>git config --global user.name "Ari Katz"</pre>
+
+<button onclick="copy('git config --global user.email &quot;arikatz.d@gmail.com&quot;')">Copy</button>
+<pre>git config --global user.email "arikatz.d@gmail.com"</pre>
+
+<button onclick="copy('git config --list')">Copy</button>
+<pre>git config --list</pre>
+
+<hr>
+
+<h2>9. GitHub SSH Setup</h2>
+
+<h3>Generate Key</h3>
+
+<button onclick="copy('ssh-keygen -t ed25519 -C &quot;arikatz.d@gmail.com&quot;')">Copy</button>
+<pre>ssh-keygen -t ed25519 -C "arikatz.d@gmail.com"</pre>
+
+<h3>Start Agent</h3>
+
+<button onclick="copy('eval &quot;$(ssh-agent -s)&quot;')">Copy</button>
+<pre>eval "$(ssh-agent -s)"</pre>
+
+<h3>Add Key</h3>
+
+<button onclick="copy('ssh-add ~/.ssh/id_ed25519')">Copy</button>
+<pre>ssh-add ~/.ssh/id_ed25519</pre>
+
+<h3>Copy Public Key</h3>
+
+<button onclick="copy('pbcopy < ~/.ssh/id_ed25519.pub')">Copy</button>
+<pre>pbcopy &lt; ~/.ssh/id_ed25519.pub</pre>
+
+<p>
+Go to:<br>
+GitHub → Settings → SSH Keys → New SSH Key
+</p>
+
+<h3>Test</h3>
+
+<button onclick="copy('ssh -T git@github.com')">Copy</button>
+<pre>ssh -T git@github.com</pre>
+
+<hr>
+
+<h2>10. Install GitHub CLI</h2>
+
+<button onclick="copy('brew install gh')">Copy</button>
+<pre>brew install gh</pre>
+
+<button onclick="copy('gh auth login')">Copy</button>
+<pre>gh auth login</pre>
+
+<hr>
+
+<h2>11. Install 1Password + CLI</h2>
+
+<button onclick="copy('brew install --cask 1password')">Copy</button>
+<pre>brew install --cask 1password</pre>
+
+<button onclick="copy('brew install 1password-cli')">Copy</button>
+<pre>brew install 1password-cli</pre>
+
+<button onclick="copy('op signin')">Copy</button>
+<pre>op signin</pre>
+
+<hr>
+
+<h2>12. Install Docker</h2>
+
+<button onclick="copy('brew install --cask docker')">Copy</button>
+<pre>brew install --cask docker</pre>
+
+<p>Open Docker.app once after installing.</p>
+
+<hr>
+
+<h2>13. Final Update</h2>
+
+<button onclick="copy('brew update && brew upgrade')">Copy</button>
+<pre>brew update &amp;&amp; brew upgrade</pre>
+
+<hr>
+
+<h2>Done</h2>
+
+<p>
+Machine should now have:
+<ul>
+<li>Homebrew</li>
+<li>Neovim + config</li>
+<li>Dev tooling</li>
+<li>Git identity</li>
+<li>GitHub SSH auth</li>
+<li>GitHub CLI</li>
+<li>1Password + CLI</li>
+<li>Docker</li>
+<li>Watchman + Postgres + Redis</li>
+</ul>
+</p>
+
+<hr>
+
+<script>
+function copy(text) {
+  navigator.clipboard.writeText(text);
+}
+</script>
+
+</body>
+</html>
